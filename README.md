@@ -9,7 +9,7 @@ El script llama a un PHP que contiene la estructura de conexion de la base de da
        if (!$ConnBDConn) {
          throw new Exception('Could not connect to database server');
        } else {
-         return WConnBDConn;
+         return ConnBDConn;
        }
     }
 ?>
