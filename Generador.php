@@ -3,7 +3,7 @@
 //
 // Edicion necesaria:
 //    Lineas 15,16,17: Ingresar los Numeros de establecimiento VISA, MASTER y AMEX, en caso de corresponder
-//    Linea 18: Ingresar la ruta al script de conexion a la base de datos (Linea ...)
+//    Linea 18: Ingresar la ruta al script de conexion a la base de datos
 //    Linea 61: Agregar la estructura de busqueda del tipo de tarjeta
 //    Linea 63: Agregar la estructura de busqueda del numero de la tarjeta
 //
