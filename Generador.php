@@ -51,7 +51,7 @@ while($row = mysqli_fetch_array($BuscoDebitos))
         $Monto = $conn->query("SELECT total,status,id from tblinvoices where userid='".$UserID."' ORDER BY id DESC limit 1");
         $MontoT = mysqli_fetch_array($Monto);
                 $MontoCobro=$MontoT[0];
-                $MONTO=str_replace('.','',$MontoT[0]);
+                $MONTO=str_replace('.','',number_format($MontoT[0],2,'.',''));
 
                 $Estado=$MontoT[1];
                 $NroFACT=$MontoT[2];
@@ -100,10 +100,10 @@ $CANTC=FORMATEO($CANTC,6);
 $CANTMC=FORMATEO($CANTMC,6);
 $CANTAMX=FORMATEO($CANTAMX,6);
 
-$MONTOD=str_replace('.','',$MONTOD);
-$MONTOC=str_replace('.','',$MONTOC);
-$MONTOMC=str_replace('.','',$MONTOMC);
-$MONTOAMX=str_replace('.','',$MONTOAMX);
+$MONTOD=str_replace('.','',number_format($MONTOD,2,'.',''));
+$MONTOC=str_replace('.','',number_format($MONTOC,2,'.',''));
+$MONTOMC=str_replace('.','',number_format($MONTOMC,2,'.',''));
+$MONTOAMX=str_replace('.','',number_format($MONTOAMX,2,'.',''));
         $MONTOD=FORMATEO($MONTOD,15);
         $MONTOC=FORMATEO($MONTOC,15);
         $MONTOMC=FORMATEO($MONTOMC,15);
